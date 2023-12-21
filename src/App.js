@@ -1,8 +1,9 @@
 import "./App.css";
+import SignupPage from "./pages/SignupPage/SignupPage";
 function App() {
   return (
     <div className="App">
-      <h1>Flex Wheels</h1>
+      <SignupPage />
     </div>
   );
 }

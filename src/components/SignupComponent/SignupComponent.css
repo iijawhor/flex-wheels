@@ -1,0 +1,56 @@
+.signupComponent {
+  position: relative;
+  text-align: center;
+  width: 25%;
+  margin: auto;
+  top: 50px;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.signupForm {
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  text-align: start;
+  align-items: center;
+}
+.signupComponentHeader {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+.signupComponent {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.4px;
+}
+.signupComponentGreetings {
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.signupButton {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgb(38, 158, 38);
+  color: white;
+  margin: 10px auto 10px auto !important;
+}
+.signupComponentLoginLink {
+  color: rgb(38, 158, 38);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

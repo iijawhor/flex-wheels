@@ -5,7 +5,7 @@ import {
   onAuthStateChanged
 } from "firebase/auth";
 import { firebaseApp } from "../firebaseConfig/firebaseConfigurations";
-const auth = getAuth(App);
+const auth = getAuth(firebaseApp);
 export class FirebaseAuthentication {
   async createUser({ email, password }) {
     try {

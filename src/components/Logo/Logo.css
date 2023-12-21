@@ -1,0 +1,13 @@
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: -1px;
+  border: none;
+  width: fit-content;
+  padding: 5px;
+  background-color: rgb(38, 158, 38);
+  color: white;
+  border-radius: 5px;
+  margin: 5px auto 5px;
+}

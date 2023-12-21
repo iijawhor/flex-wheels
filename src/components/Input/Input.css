@@ -1,0 +1,28 @@
+.inputFieldset {
+  border: 1px solid rgb(38, 158, 38);
+  height: fit-content;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.inputField {
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+}
+.inputLabel {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(38, 158, 38);
+}
+input::placeholder {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.active {
+  border: 2px solid rgb(38, 158, 38);
+}
