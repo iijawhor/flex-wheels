@@ -1,0 +1,55 @@
+.howItWorksSection {
+  position: relative;
+  padding: 50px 0;
+}
+.howItWorksSectionContainer {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+.howItWorksFeatureSection {
+  width: 55%;
+}
+.howItWorksSectionImageContainer {
+  width: 45%;
+  height: 550px;
+  position: relative;
+}
+.howItWorksSectionImage {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 550px;
+}
+.howItWorksFeatureSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: fit-content;
+}
+.howItWorksFeatureSectionFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.howItWorksFeatureSectionHead {
+  position: relative;
+  margin-bottom: 40px;
+}
+.howItWorksFeatureSectionHeadTitle {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 5px;
+}
+.howItWorksFeatureSectionHeadText {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

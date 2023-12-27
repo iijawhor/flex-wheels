@@ -1,0 +1,26 @@
+.howItWorksFeature {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.howItWorksFeatureDescriptionContainer {
+  padding: 5px 0;
+  width: 100%;
+}
+.howItWorksFeatureDescriptionTitle {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+.howItWorksFeatureDescription {
+  transition: 5s;
+  font-size: 16px;
+}
+.howItWorksFeatureToggle {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
