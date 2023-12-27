@@ -54,3 +54,7 @@
   margin-top: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.signupComponentDescriptionSpan {
+  color: rgb(38, 158, 38);
+  font-weight: 550;
+}

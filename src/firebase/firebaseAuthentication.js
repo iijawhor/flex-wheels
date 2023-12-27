@@ -2,7 +2,8 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  onAuthStateChanged
+  onAuthStateChanged,
+  signOut
 } from "firebase/auth";
 import { firebaseApp } from "../firebaseConfig/firebaseConfigurations";
 const auth = getAuth(firebaseApp);
@@ -15,6 +16,7 @@ export class FirebaseAuthentication {
         password
       );
       if (userAccount) {
+        // return userAccount
         this.login({ email, password });
       }
     } catch (error) {
@@ -29,15 +31,35 @@ export class FirebaseAuthentication {
       console.log("Error in firebase login");
     }
   }
-  async getUser() {
+  async getCurrentUser() {
+    const user = await new Promise((resolve) => {
+      const unsubscribe = onAuthStateChanged(
+        auth,
+        (user) => {
+          // Unsubscribe to avoid memory leaks
+          unsubscribe();
+
+          if (user) {
+            resolve(user);
+          } else {
+            console.log("No user");
+            resolve(null); // Resolve with null if there's no user
+          }
+        },
+        (error) => {
+          console.error("Error fetching user", error);
+          resolve(null); // Resolve with null in case of an error
+        }
+      );
+    });
+
+    return user;
+  }
+  async logout() {
     try {
-      const user = await onAuthStateChanged(auth, (user) => {
-        if (user) {
-          return user;
-        } else return null;
-      });
+      await signOut(auth);
     } catch (error) {
-      console.log("firebase error in getUser method ", error);
+      console.log("error in ", error);
     }
   }
 }

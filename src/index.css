@@ -20,6 +20,8 @@ a,
 Link,
 button,
 ul,
+button,
+input,
 li {
   margin: 0;
   padding: 0;
@@ -29,4 +31,10 @@ li {
   border: none;
   text-decoration: none;
   color: initial;
+  outline: none;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

@@ -4,7 +4,6 @@ const Input = React.forwardRef(function Input({
   label,
   className = "",
   value,
-  id,
   type = "text",
   ref,
   formContext,
@@ -37,6 +36,7 @@ const Input = React.forwardRef(function Input({
           id={inputId}
           value={value}
           onChange=""
+          ref={ref}
           placeholder={placeholderValue}
           onFocus={handleFocus}
           {...props}

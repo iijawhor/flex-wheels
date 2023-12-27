@@ -1,4 +1,12 @@
 .signupPage {
   background-color: #f1f1f1 !important;
-  border: 1px solid black;
+  height: 100vh;
+  margin: 0; /* Remove default margin from the body */
+  padding: 0; /* Remove default padding from the body */
+  background-image: url("https://d3nn873nee648n.cloudfront.net/1200x1800-new/20464/SM1050538.jpg");
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 100vw; /* Set the width to 100% of the viewport width */
 }
