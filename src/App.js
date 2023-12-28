@@ -30,7 +30,6 @@ function App() {
         <main>
           <Outlet />
         </main>
-        <h1>Foooter</h1>
       </div>
     </div>
   ) : null;
