@@ -3,6 +3,7 @@ import authService from "../../firebase/firebaseAuthentication";
 import { carsInOurFleet } from "../../assets/assets";
 import FeaturesPage from "../FeaturesPage/FeaturesPage";
 import HowItWorksSection from "../../components/HowItWorksSection/HowItWorksSection";
+import ServiceLocation from "../../components/ServiceLocation/ServiceLocation";
 function HomePage() {
   const [user, setUser] = useState();
   useEffect(() => {
@@ -24,6 +25,7 @@ function HomePage() {
     <div>
       <FeaturesPage />
       <HowItWorksSection />
+      <ServiceLocation />
     </div>
   );
 }
