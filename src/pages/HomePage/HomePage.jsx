@@ -4,6 +4,7 @@ import { carsInOurFleet } from "../../assets/assets";
 import FeaturesPage from "../FeaturesPage/FeaturesPage";
 import HowItWorksSection from "../../components/HowItWorksSection/HowItWorksSection";
 import ServiceLocation from "../../components/ServiceLocation/ServiceLocation";
+import AppDownloadOption from "../../components/AppDownloadOption/AppDownloadOption";
 function HomePage() {
   const [user, setUser] = useState();
   useEffect(() => {
@@ -26,6 +27,7 @@ function HomePage() {
       <FeaturesPage />
       <HowItWorksSection />
       <ServiceLocation />
+      <AppDownloadOption />
     </div>
   );
 }
