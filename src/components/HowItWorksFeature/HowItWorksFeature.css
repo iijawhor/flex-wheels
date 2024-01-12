@@ -14,8 +14,8 @@
   margin-bottom: 5px;
 }
 .howItWorksFeatureDescription {
-  transition: 5s;
-  font-size: 16px;
+  font-size: 15px;
+  text-align: start;
 }
 .howItWorksFeatureToggle {
   width: 100%;

@@ -1,0 +1,12 @@
+.searchResultPage {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  box-shadow: unset;
+  margin-top: 5px;
+  margin-bottom: 13px;
+  overflow-y: auto;
+  min-height: 75vh;
+  scroll-behavior: smooth;
+  padding-top: 70px;
+}

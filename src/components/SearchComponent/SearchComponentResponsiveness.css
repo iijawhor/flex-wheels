@@ -1,0 +1,39 @@
+@media screen and (max-width: 912px) {
+  .searchComponentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchComponentBox {
+    width: 100%;
+    border: none;
+    position: relative;
+    padding: 0;
+    margin-top: 5px;
+    left: 0;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 0%;
+    padding: 0 10px;
+  }
+  .searchInputDatePicker {
+    margin-top: 2px;
+    width: 100%;
+    border-radius: 5px;
+    gap: 5px;
+    padding: 0;
+  }
+  .searchInput {
+    border: 1px solid rgb(222, 222, 222);
+    width: 100%;
+    padding-left: 2px;
+  }
+  .searchInputLabel {
+    margin-left: 0;
+  }
+  .searchButton {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 8px;
+  }
+}

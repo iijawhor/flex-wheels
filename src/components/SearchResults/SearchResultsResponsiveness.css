@@ -1,0 +1,37 @@
+@media screen and (max-width: 1000px) {
+  .searchResults {
+  }
+  .searchResult {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .searchResultDetails {
+    flex-direction: column;
+  }
+  .seatDetails {
+    padding: 0;
+  }
+  .searchResultDescription {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .searchResultSpecifications {
+    padding: 10px 0;
+    margin: 0;
+  }
+  .searchResultSlotBookOption {
+    padding: 0;
+    width: 100%;
+  }
+  .rentDetail {
+    width: auto;
+  }
+  .carBookButton {
+    width: 100%;
+  }
+  .searchResultCarDetailsSeeButton {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+}

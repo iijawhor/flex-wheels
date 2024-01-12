@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./HeaderComponent.css";
 import Logo from "../Logo/Logo";
 import Container from "../Container/Container";
@@ -51,8 +51,38 @@ function HeaderComponent() {
       slug: "/login"
     }
   ];
+  let headerHeight;
+  useEffect(() => {
+    const header = document.querySelector(".headerComponent");
+    headerHeight = header.offsetHeight;
+  }, []);
+  const [scrolling, setScrolling] = useState(false);
+  const lastScrollPosition = useRef(0);
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.scrollY;
+
+    if (
+      currentScrollPosition > headerHeight &&
+      currentScrollPosition > lastScrollPosition.current
+    ) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+
+    lastScrollPosition.current = currentScrollPosition;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="headerComponent">
+    <header className={`headerComponent ${scrolling ? "scrolled" : ""}`}>
       <Container className="headerContainer">
         <div className="headerLogoContainer">
           <Link to="/">
@@ -63,7 +93,7 @@ function HeaderComponent() {
           <ul className="headerItems">
             {navbarItems.map((item) =>
               item.active ? (
-                <li className="navbarItem">
+                <li className="navbarItem" key={item.name}>
                   <button
                     onClick={() => navigate(item.slug)}
                     className="headerItemButton"

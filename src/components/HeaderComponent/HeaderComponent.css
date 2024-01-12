@@ -1,8 +1,15 @@
 .headerComponent {
-  padding: 10px 50px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(215, 215, 215);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  transition: 0.2s;
 }
+
 .headerContainer {
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +31,9 @@
   letter-spacing: 0.4px;
   cursor: pointer;
   font-weight: 400;
+}
+.scrolled {
+  top: -70px;
 }
 @media screen and (max-width: 912px) {
   .headerComponent {

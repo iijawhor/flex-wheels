@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./HowItWorksFeature.css";
 import Container from "../Container/Container";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 function HowItWorksFeature({ title, description }) {
   const [toggleDescription, setToggleDescription] = useState(false);
   return (
@@ -12,7 +13,11 @@ function HowItWorksFeature({ title, description }) {
           onClick={() => setToggleDescription(!toggleDescription)}
         >
           <h1 className="howItWorksFeatureDescriptionTitle">{title}</h1>
-          <KeyboardArrowDownIcon />
+          {toggleDescription ? (
+            <KeyboardArrowUpIcon />
+          ) : (
+            <KeyboardArrowDownIcon />
+          )}
         </div>
 
         {toggleDescription && (

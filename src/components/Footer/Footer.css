@@ -1,0 +1,32 @@
+.footerContainer {
+  padding: 0 10px;
+  align-items: center;
+}
+
+.footerLine {
+  border: 1px solid green;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.footerBox {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  justify-content: space-between;
+}
+.footerLogo {
+  margin-left: 50px;
+}
+.socialConnects {
+  display: flex;
+  position: relative;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+}
+.social {
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}

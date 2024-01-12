@@ -13,6 +13,8 @@ import HomePage from "./pages/HomePage/HomePage";
 import AuthLayout from "./components/AuthLayout/AuthLayout";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
+import SearchResults from "./components/SearchResults/SearchResults";
+import SearchResultPage from "./pages/SearchResultPage/SearchResultPage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
     element: (
       <AuthLayout authentication={false}>
         <SignupPage />
+      </AuthLayout>
+    )
+  },
+  {
+    path: "/search-results",
+    element: (
+      <AuthLayout authentication={true}>
+        <SearchResultPage />
       </AuthLayout>
     )
   }

@@ -2,9 +2,12 @@
   font-size: 17px;
   letter-spacing: 0.4px;
   cursor: pointer;
-  font-weight: 400;
-  background-color: black;
-  color: white;
   padding: 5px;
   border-radius: 5px;
+  font-weight: 400;
+}
+.logoutButton:hover {
+  background-color: rgb(38, 158, 38);
+  color: white;
+  transition: 0.5s;
 }

@@ -3,7 +3,7 @@
   text-align: center;
   width: 25%;
   margin: auto;
-  top: 50px;
+  top: 100px;
   background-color: #fff;
   padding: 35px;
   border-radius: 10px;
@@ -22,7 +22,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 15px;
+  align-items: center;
+  gap: 5px;
   padding-bottom: 10px;
 }
 .signupComponent {

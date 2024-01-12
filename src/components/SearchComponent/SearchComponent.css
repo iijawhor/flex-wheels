@@ -1,0 +1,64 @@
+.searchComponentContainer {
+  position: relative;
+  align-items: center;
+  /* height: 91vh; */
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url("https://kyte.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.1ee68d83.webp&w=1920&q=100"); */
+}
+.searchComponentImage {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.searchComponentBox {
+  border: 5px solid rgb(38, 158, 38);
+  display: flex;
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  top: 40%;
+  left: 25%;
+  background-color: white;
+  padding: 15px 50px;
+  border-radius: 50px;
+  /* width: fit-content; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.searchInputLabel {
+  margin-left: 10px;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+.searchInputDatePicker {
+  display: flex;
+  text-align: start;
+}
+.searchButton {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 100%;
+  width: fit-content;
+  padding: 15px 12px;
+  height: fit-content;
+  background-color: rgb(217, 217, 217);
+  color: rgb(38, 158, 38);
+}
+.searchButton:hover {
+  background-color: rgb(38, 158, 38);
+  color: white;
+  transition: 0.3s;
+}

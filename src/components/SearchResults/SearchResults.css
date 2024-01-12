@@ -1,0 +1,136 @@
+.searchResultsContainer {
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+  overflow-y: auto;
+}
+.searchResultLine {
+  width: 80px;
+  margin: 5px 0 5px 0;
+  border: 1px solid rgb(201, 201, 201);
+}
+.searchResults {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.searchResult {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.searchResultDetails {
+  display: flex;
+}
+.searchResultImageConatainer {
+  max-width: 380px;
+  height: 220px;
+}
+.searchResultImage {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.searchResultSpecifications {
+  padding: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+.searchResultCarClass {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.searchResultCarName {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  letter-spacing: 0.4px;
+}
+.seatDetails {
+  font-size: 14px;
+  color: rgb(103, 103, 103);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+.searchResultCarSeats {
+}
+.searchResultCarLuggageSpace {
+}
+.searchResultCarDetailsSeeButton {
+  padding: 2px 0;
+  border-radius: 10px;
+  color: green;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+.searchResultDescription {
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 75%;
+  margin-top: 20px;
+}
+.searchResultDescriptionText {
+  color: rgb(103, 103, 103);
+  letter-spacing: 0.5px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.searchResultSlotBookOption {
+  position: relative;
+  padding: 10px;
+  margin-right: 50px;
+  height: fit-content;
+}
+.carBookButton {
+  background-color: antiquewhite;
+}
+.searchResultBottomLine {
+  border: 1px solid rgb(190, 190, 190);
+}
+.rentDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+.carRent {
+  font-weight: 400;
+  font-size: 16px;
+}
+.offers {
+  color: rgb(38, 158, 38);
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+.carBookButton {
+  width: 100%;
+  background-color: rgb(38, 158, 38);
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

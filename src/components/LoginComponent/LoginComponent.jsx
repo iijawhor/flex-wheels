@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./LoginComponent.css";
+import "./LoginComponentResponsive.css";
 import Input from "../Input/Input";
 import Logo from "../Logo/Logo";
 import authService from "../../firebase/firebaseAuthentication";

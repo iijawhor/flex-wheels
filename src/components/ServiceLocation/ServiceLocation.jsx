@@ -3,19 +3,20 @@ import "./ServiceLocation.css";
 import Container from "../Container/Container";
 function ServiceLocation() {
   const availableLocation = [
-    "Delhi",
-    "Mumbai",
-    "Bangalore",
-    "Hyderabad",
-    "Kolkata",
-    "Pune",
-    "Ahmedabad",
-    "Jaipur",
-    "Gurgaon",
-    "Mysore",
-    "Trivananthapuram",
-    "Sindh"
+    { name: "Delhi", id: 1 },
+    { name: "Mumbai", id: 2 },
+    { name: "Bangalore", id: 3 },
+    { name: "Hyderabad", id: 4 },
+    { name: "Kolkata", id: 5 },
+    { name: "Pune", id: 6 },
+    { name: "Ahmedabad", id: 7 },
+    { name: "Jaipur", id: 8 },
+    { name: "Gurgaon", id: 9 },
+    { name: "Mysore", id: 10 },
+    { name: "Trivandrum", id: 11 },
+    { name: "Sindh", id: 12 }
   ];
+
   return (
     <Container className="serviceLocationContainer">
       <h2 className="serviceLocationHeading">Locations</h2>
@@ -30,7 +31,9 @@ function ServiceLocation() {
         <div className="locationListContainer">
           <ul className="locationList">
             {availableLocation.map((location) => (
-              <li className="serviceLcation">{location}</li>
+              <li key={location.id} className="serviceLcation">
+                {location.name}
+              </li>
             ))}
           </ul>
         </div>

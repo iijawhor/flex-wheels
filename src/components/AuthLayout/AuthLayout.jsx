@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 import HeaderComponent from "../HeaderComponent/HeaderComponent";
 function AuthLayout({ children, authentication = true }) {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ function AuthLayout({ children, authentication = true }) {
     <>
       <HeaderComponent />
       {children}
+      <Footer />
     </>
   );
 }
