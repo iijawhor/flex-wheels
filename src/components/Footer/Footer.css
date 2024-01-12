@@ -1,6 +1,9 @@
 .footerContainer {
   padding: 0 10px;
+  position: absolute;
+  width: 100%;
   align-items: center;
+  bottom: 0;
 }
 
 .footerLine {
